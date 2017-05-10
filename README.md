@@ -13,11 +13,7 @@ def show
 end
 ```
 
-<<<<<<< HEAD:README.md
-## 1.format.html
-=======
 ### 1. format.html
->>>>>>> e747cefc1220277a64ac2345c2cd2e7306d4e3af:README.rdoc
 
 ```ruby
 # app/views/posts/index.html.erb
