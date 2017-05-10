@@ -13,12 +13,17 @@ def show
 end
 ```
 
+<<<<<<< HEAD:README.md
 ## 1.format.html
+=======
+### 1. format.html
+>>>>>>> e747cefc1220277a64ac2345c2cd2e7306d4e3af:README.rdoc
 
 ```ruby
 # app/views/posts/index.html.erb
 <%= link_to 'Show(html)', post, id: "post_ajax_html" %>
-
+```
+```javascript
 <script data-turbolinks="false">
   $("#post_ajax_html").click(function(e){
     e.preventDefault();
@@ -33,22 +38,25 @@ end
 </script>
 ```
 
-## 2.format.js
-```
+### 2. format.js
+
+```ruby
 # app/views/posts/index.html.erb
 <%= link_to 'Show(js-remote)', post, remote: true %>
 
+# 建立一個 _post.html.erb 檔，內容可以與show.html.erb 相同
 # app/views/posts/show.js.erb
 $("#post_area").html("<%= j(render partial: 'post', locals: { post: @post }) %>")
-
-# 需要建立一個 _post.html.erb 檔，內容可以與show.html.erb 相同
 ```
 
-## 3.format.json
-```
+
+### 3. format.json
+
+```ruby
 # app/views/posts/index.html.erb
 <%= link_to 'Show(json)', post, id: "post_ajax_json" %>
-
+```
+```javascript
 <script data-turbolinks="false">
 $("#post_ajax_json").click(function(e) {
   e.preventDefault();
@@ -64,8 +72,4 @@ $("#post_ajax_json").click(function(e) {
   })
 })
 </script>
-
 ```
-
-
-
