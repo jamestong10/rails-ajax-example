@@ -2,7 +2,7 @@
 
 根據respond_to 三種format，介紹三種 ajax 操作方式
 
-```
+```ruby
 # app/controllers/posts_controller.rb
 def show
   respond_to do |format|
@@ -14,7 +14,8 @@ end
 ```
 
 ## 1.format.html
-```
+
+```ruby
 # app/views/posts/index.html.erb
 <%= link_to 'Show(html)', post, id: "post_ajax_html" %>
 
